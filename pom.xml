@@ -10,7 +10,7 @@
     <version>1.0-SNAPSHOT</version>
 
     <modules>
-        <module>chapter-01-spring4</module>
+        <module>part-01-spring4</module>
     </modules>
 
     <properties>
@@ -18,6 +18,7 @@
         <encoding>UTF-8</encoding>
         <spring.version>4.1.6.RELEASE</spring.version>
         <aspectj.version>1.9.4</aspectj.version>
+        <commons-io.version>2.6</commons-io.version>
     </properties>
 
     <dependencyManagement>
@@ -41,6 +42,11 @@
                 <groupId>org.aspectj</groupId>
                 <artifactId>aspectjweaver</artifactId>
                 <version>${aspectj.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>commons-io</groupId>
+                <artifactId>commons-io</artifactId>
+                <version>${commons-io.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

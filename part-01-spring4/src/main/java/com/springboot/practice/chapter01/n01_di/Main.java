@@ -1,4 +1,4 @@
-package com.springboot.practice.chapter01.spring4.n01_di;
+package com.springboot.practice.chapter01.n01_di;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
