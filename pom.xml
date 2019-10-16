@@ -34,8 +34,8 @@
         <aspectj.version>1.9.4</aspectj.version>
         <!-- Commons -->
         <commons-io.version>2.6</commons-io.version>
-        <!-- Spring MVC 支持 Json 数据绑定 -->
-        <jackson-databind.version>2.5.3</jackson-databind.version>
+        <!-- Jackson -->
+        <jackson.version>2.10.0</jackson.version>
     </properties>
 
     <dependencyManagement>
@@ -145,7 +145,13 @@
             <dependency>
                 <groupId>com.fasterxml.jackson.core</groupId>
                 <artifactId>jackson-databind</artifactId>
-                <version>${jackson-databind.version}</version>
+                <version>${jackson.version}</version>
+            </dependency>
+            <!-- Spring MVC 支持 Json 和 Xml 数据绑定 -->
+            <dependency>
+                <groupId>com.fasterxml.jackson.dataformat</groupId>
+                <artifactId>jackson-dataformat-xml</artifactId>
+                <version>${jackson.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

@@ -67,9 +67,14 @@
             <artifactId>logback-access</artifactId>
         </dependency>
         <!-- Spring MVC 支持 Json 数据绑定 -->
-        <dependency>
+        <!--<dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-databind</artifactId>
+        </dependency>-->
+        <!-- Spring MVC 支持 Json 和 Xml 数据绑定 -->
+        <dependency>
+            <groupId>com.fasterxml.jackson.dataformat</groupId>
+            <artifactId>jackson-dataformat-xml</artifactId>
         </dependency>
     </dependencies>
 
