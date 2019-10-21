@@ -36,6 +36,8 @@
         <commons-io.version>2.6</commons-io.version>
         <!-- Jackson -->
         <jackson.version>2.10.0</jackson.version>
+        <!-- commons-fileupload -->
+        <commons-fileupload.version>1.4</commons-fileupload.version>
     </properties>
 
     <dependencyManagement>
@@ -152,6 +154,12 @@
                 <groupId>com.fasterxml.jackson.dataformat</groupId>
                 <artifactId>jackson-dataformat-xml</artifactId>
                 <version>${jackson.version}</version>
+            </dependency>
+            <!-- Spring MVC 支持文件上传 -->
+            <dependency>
+                <groupId>commons-fileupload</groupId>
+                <artifactId>commons-fileupload</artifactId>
+                <version>${commons-fileupload.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
